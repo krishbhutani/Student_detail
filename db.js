@@ -1,5 +1,9 @@
 const mongoose = require('mongoose')    //Importing Mongoose
-const URL = 'mongodb://localhost:27017/practice'     //URL of MongoDB
+require('dotenv').config();
+
+const URL = process.env.DB_URL     //URL of MongoDB
+
+
 
 mongoose.connect(URL);        //Connecting Mongoose with db
 

@@ -1,9 +1,10 @@
 const express = require('express')      //Importing Express 
 const mongoose = require('mongoose')    //Importing Mongoose
 const db = require('./db');             //Importing Database
+require('dotenv').config();
 
 const app = express()    //MAking an Application
-const port = 3000        //Taking a port
+const port = process.env.PORT || 3000       //Taking a port
 
 //To convert json to object 
 const bodyParser = require('body-parser');
