@@ -9,4 +9,4 @@ const studentSchema =new mongoose.Schema({
 })
 
 const studentList = mongoose.model('student',studentSchema)
-module.exports = studentList;
+module.exports = studentList;    //Importing
